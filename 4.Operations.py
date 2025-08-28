@@ -86,3 +86,48 @@ a //= 2
 # here what is happening is a = a // 2 so the value of a was 2.0 and here it means first floor divide 2 from the previous value of a and then assign it to a
 # so now the value of a is 1.0  
 print(a)
+
+#############################################################################################
+
+# Comparison Operators
+# 1. == (Equal to) it checks whether the two values are equal or not if equal then it returns True otherwise False
+print("==")
+print("5 == 5",5 == 5) # True
+print("5 == 3",5 == 3) # False
+
+# 2. != (Not Equal to) it checks whether the two values are not equal or not if not equal then it returns True otherwise False
+print("!=")
+print("5 != 3",5 != 3) # True    
+print("5 != 5",5 != 5) # False
+
+# 3. > (Greater than) it checks whether the first value is greater than the second value or not if greater then it returns True otherwise False
+print(">")
+print("5 > 3",5 > 3) # True 
+print("3 > 5",3 > 5) # False
+
+# 4. < (Less than) it checks whether the first value is less than the second value or not if less then it returns True otherwise False
+print("<")
+print("3 < 5",3 < 5) # True
+print("5 < 3",5 < 3) # False
+
+# 5. >= (Greater than or Equal to) it checks whether the first value is greater than or equal to the second value or not if greater than or equal then it returns True otherwise False
+print(">=")
+print("5 >= 3",5 >= 3) # True
+print("5 >= 5",5 >= 5) # True
+print("3 >= 5",3 >= 5) # False
+
+# 6. <= (Less than or Equal to) it checks whether the first value is less than or equal to the second value or not if less than or equal then it returns True otherwise False
+print("<=")
+print("3 <= 5",3 <= 5) # True
+print("3 <= 3",3 <= 3) # True
+print("5 <= 3",5 <= 3) # False
+
+#############################################################################################
+
+# Logical Operators
+# 1. and it returns True if both the conditions are True otherwise it returns False
+# example: (5 > 3) and (3 < 5) it returns True because both the conditions are True
+# 2. or it returns True if at least one of the conditions is True otherwise it returns False
+# example: (5 > 3) or (3 > 5) it returns True       \
+# 3. not it returns True if the condition is False and returns False if the condition is True
+# example: not(5 > 3) it returns False because the condition is True
