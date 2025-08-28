@@ -62,3 +62,27 @@ c *= 2
 # here what is happening is c = c * 2 so the value of c was 8 and here it means first multiply 2 to the previous value of c and then assign it to c
 # so now the value of c is 16   
 print(c)
+
+# 5. /= (Divide and Assign) it divides the value from the variable and assigns the new value to the variable
+a /= 4
+# here what is happening is a = a / 4 so the value of a was 8 and here it means first divide 4 from the previous value of a and then assign it to a
+# so now the value of a is 2.0
+print(a)
+
+# 6. %= (Modulus and Assign) it gives remainder and assigns the new value to the variable
+b %= 3
+# here what is happening is b = b % 3 so the value of b was 8 and here it means first divide 3 from the previous value of b and then assign the remainder to b
+# so now the value of b is 2
+print(b)
+
+#7. **= (Exponent and Assign) it gives power and assigns the new value to the variable
+c **= 2
+# here what is happening is c = c ** 2 so the value of c was 16 and here it means first power 2 to the previous value of c and then assign it to c
+# so now the value of c is 256  
+print(c)
+
+# 8. //= (Floor Divide and Assign) it gives integer value and assigns the new value to the variable
+a //= 2 
+# here what is happening is a = a // 2 so the value of a was 2.0 and here it means first floor divide 2 from the previous value of a and then assign it to a
+# so now the value of a is 1.0  
+print(a)
