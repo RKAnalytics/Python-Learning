@@ -41,3 +41,56 @@ elif money < 10: # if this condition is True it will print "I dont have enough m
 
 else: 
     print ("I will buy a gum")
+
+
+#################################################################################
+#QUESTION NO 1: COMPARING TWO NUMBERS AND FINDING THE GREATER ONE
+
+num_1 = int(input("Enter no 1: "))
+num_2 = int(input("Enter no 2: "))
+
+# HERE I HAVE USED LOGICAL OPERATORS WITH IF ELSE STATEMENTS
+if num_1 > num_2 or num_1 < num_2:
+    if num_1 > num_2:
+        print(f"{num_1} is greater than {num_2}")
+    elif num_1 < num_2:
+        print(f"{num_2} is greater than {num_1}")
+else:
+    print(f"{num_1} is equal to {num_2}")
+
+# QUESTION NO 2: CHECKING IF A NUMBER IS EVEN OR ODD
+
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+    print(f"{num} is even.")
+else:
+    print(f"{num} is odd.")
+
+# QUESTION NO 3: ACCEPTING GENDER AND PRINTING GREETING
+
+gender = input("Enter the gender: ")
+
+if gender == "male" or gender == "Male":
+    print ("Good Morning Sir")
+elif gender == "female" or gender == "Female":
+    print ("Good Morning Ma'am")
+
+# QUESTION NO 4: CHECKING VOTING ELIGIBILITY BASED ON AGE
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+
+if age < 18:
+    print(f"Hello, {name} you are not eligible to vote.")
+elif age >= 18:
+    print (f"Hello, {name} you are eligible to vote.")
+
+#QUESTION NO 5: CHECKING IF THE YEAR IS LEAP YEAR OR NOT
+
+year = int(input("Enter a year: "))
+
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(f"{year} is a leap year.")
+else:
+    print(f"{year} is not a leap year.")
