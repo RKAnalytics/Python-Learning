@@ -65,3 +65,68 @@ for i in range(1,(num + 1)):
     if i == 5:
         continue
     print(i)
+
+####################################################################################
+
+num = int (input("Number:"))
+#
+#even = 0
+#odd = 0
+#
+#for i in range(1, num+1):
+#    if i % 2 == 0:
+#        even = even + i
+## for j in range(1, num+1):
+#    else:
+#        odd = odd + i
+#        
+#print(even)
+#print(odd)
+#print(even + odd)
+#sumfactor = 0
+#for i in range(1, num):
+#    if num % i == 0:
+#        sumfactor = sumfactor + i
+#if sumfactor == num:
+#    print ("Perfect Number")  
+#else:
+#    print("Not a perfect number")
+
+#factor = 0
+#
+#for i in range(1, num +1):
+#    if num % i == 0:
+#        factor = factor + 1
+#if factor == 2:
+#    print("Prime Number")
+#else:
+#    print("Not a Prime")
+
+#name = "Rafay Khan"
+#b = ""
+#
+#for i in range(len(name)-1, -1, -1):
+#    b = b + name[i]
+#print (b)    
+#rev = 0
+#while num > 0:
+#    rev = (rev * 10) + num % 10
+#    num = num // 10
+#print(rev)
+#
+#    
+#copy = num   
+#rev = 0
+#
+#while num > 0:
+#    
+#    rev = (rev*10) + num % 10
+#    num = num // 10
+#
+#print(rev)
+#
+#if rev == copy:
+#    print("It is a palindrome")
+#
+#else:
+#    print("Its not a palindrome")
