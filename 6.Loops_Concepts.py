@@ -130,3 +130,28 @@ num = int (input("Number:"))
 #
 #else:
 #    print("Its not a palindrome")
+
+####################################################################################3
+
+import random
+
+num = random.randint(1, 11)
+
+tries = 0
+while True:
+
+    guess = int(input("Guess a number between 1 to 10: "))
+
+    if guess == num:
+        tries += 1
+        print("Congratulations! You guessed the correct number.")
+        break
+
+    elif guess < num:
+        print("Your guess is too low.")
+        tries += 1
+    elif guess > num:
+        print("Your guess is too high.")
+        tries += 1
+    if tries == 3:
+        print("Sorry, you've used all your tries. The correct number was:", num)
