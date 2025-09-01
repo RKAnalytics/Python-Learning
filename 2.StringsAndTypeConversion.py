@@ -61,3 +61,17 @@ print(a[-5:])  # Output: world
 # - () (empty tuple)
 # - {} (empty dictionary)
 # all other values are considered truthy.
+
+# there are some functions of strings
+# .split() - splits a string into a list of substrings based on a delimiter
+a = "hello world"
+print(a.split())  # Output: ['hello', 'world']
+# .join() - joins a list of strings into a single string with a delimiter
+b = ['hello', 'world']
+print(":".join(b))  # Output: hello:world
+# .replace() - replaces a substring with another substring
+c = "hello world"
+print(c.replace("world", "there"))  # Output: hello there
+# .strip() - removes leading and trailing whitespace from a string
+d = "   hello world   "
+print(d.strip())  # Output: hello world
