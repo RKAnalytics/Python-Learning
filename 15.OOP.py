@@ -257,3 +257,43 @@ print(obj.display())
 # Abstraction --> Abstraction is the concept of hiding the complex implementation details and showing only the essential features of the object. In Python, we can achieve abstraction using abstract classes and interfaces.
 # in simple words if you want to setup some rules for your classes and objects, you can use abstraction to define
 # those rules without exposing the underlying implementation.
+
+# there are set of rules that needs to be followed by the child class
+# a method is defined in the parent class and is meant to be overridden in the child class.
+# it means that you defined the method in the parent class and you havent implemented it and for the implementation
+# you have to provide the implementation in the child class.
+
+
+from abc import ABC, abstractmethod
+
+class abstrat(ABC): # inheriting the ABC class
+    @abstractmethod
+    def area(self):
+        pass
+
+class Square(abstrat):
+    def __init__(self, side):
+        self.side = side
+
+    def area(self):
+        return self.side * self.side
+
+class Circle(abstrat):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self): # due to self it can access the instance variable and can have the access the attributes because it is pointing to the instance and 
+        # can capture the location of the object in memory where all the attributes are stored
+        return 3.14 * self.radius * self.radius
+    
+class Combine(Square, Circle):
+    def __init__(self, side, radius):
+        Square.__init__(self, side) # initializing the Square class
+        Circle.__init__(self, radius) # initializing the Circle class because both classes have different __init__ methods
+
+    def display(self):
+        print(f"""The radius of Circle is {self.radius} and the side of the square is {self.side} and
+               the area of a square is {Square.area(self)} and the area of a circle is {Circle.area(self)}""")
+
+obj = Combine(5, 5)
+print(obj.display())
