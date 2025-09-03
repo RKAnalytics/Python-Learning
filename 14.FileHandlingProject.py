@@ -3,7 +3,7 @@ import os
 
 def readFileAndFolder():
     path = Path("")
-    items = list(path.rglob("*"))
+    items = list(path.rglob("*")) # here we used * in rglob because it allows us to search for all files and folders recursively
     for i, item in enumerate(items):
         print(f"{i+1}: {item}")
 
