@@ -297,3 +297,7 @@ class Combine(Square, Circle):
 
 obj = Combine(5, 5)
 print(obj.display())
+
+from abc import abc , abstractmethod 
+
+class abstract ()
